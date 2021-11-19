@@ -1,0 +1,36 @@
+print("Welcome to my computer Quiz")
+
+playing = input("Do you want to play")
+if playing != "yes":
+    quit()
+
+print("Okay! Let's play :)")
+
+answer = input("what does CPU stand for")
+if answer.lower() == "central processing unit":
+    score = 0
+    print('Correct!')
+else: ("incorrect")
+
+answer = input("what does GPU for")
+if answer.lower() == "graphics processing unit":
+    print('Correct!')
+    score +=1
+else: ("incorrect")
+
+answer = input("what does RAM stand for")
+if answer.lower() == "random processing unit":
+    print('Correct!')
+    score +=1
+else:
+    print ("incorrect")
+
+
+answer = input("what does PSU stand for")
+if answer.lower() == "power supply":
+    print('Correct!')
+    score +=1
+else:
+    print ("incorrect")
+print("You got"+str(score)+"question correct!")
+print("You got"+str((score/4)*100)+"%.")
